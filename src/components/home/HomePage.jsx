@@ -15,7 +15,7 @@ const HomePage = () => {
           <p className="sm:text-lg xl:text-xl mt-4">
             Your Premier Partner for Cross-Platform App Excellence!
           </p>
-          <button className="bg-[#08A7CE] rounded-full uppercase px-7 py-3 mt-5 md:mt-14 font-bold">
+          <button className="bg-[#08A7CE] rounded-full uppercase px-7 py-3 mt-5 md:mt-14 font-bold cursor-pointer hover:bg-[#08A7CE66] transition-colors duration-300">
             Upgrade Your Tech
           </button>
         </div>
@@ -61,7 +61,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <button className="flex items-center gap-2 bg-[#08A7CE] px-7 py-3 rounded-full font-bold max-md:mt-5 md:place-self-end">
+        <button className="flex items-center gap-2 bg-[#08A7CE] px-7 py-3 rounded-full font-bold max-md:mt-5 md:place-self-end cursor-pointer hover:bg-[#08A7CE66] transition-colors duration-300">
           BEGIN <GoArrowUpRight size={23} />
         </button>
       </div>
@@ -102,11 +102,11 @@ const HomePage = () => {
       <div className="mt-24 flex max-md:flex-col justify-between w-full">
         <div className="md:w-[60%] font-semibold md:h-[55vh] flex flex-col max-md:gap-5 justify-between">
           <ul className="flex list-none gap-10 max-md:text-sm">
-            <li>Events</li>
-            <li>Gen Ai</li>
-            <li>Careers</li>
-            <li>Case Study</li>
-            <li>SME Talks</li>
+            <li className="cursor-pointer hover:underline">Events</li>
+            <li className="cursor-pointer hover:underline">Gen Ai</li>
+            <li className="cursor-pointer hover:underline">Careers</li>
+            <li className="cursor-pointer hover:underline">Case Study</li>
+            <li className="cursor-pointer hover:underline">SME Talks</li>
           </ul>
           <div className="text-lg max-md:text-center md:text-[28px] md:w-[50%]">
             <p>
@@ -115,10 +115,10 @@ const HomePage = () => {
             </p>
           </div>
           <ul className="flex list-none gap-10 text-xs md:text-[14px] font-medium">
-            <li>About</li>
-            <li>Insights</li>
-            <li>Community</li>
-            <li>Privacy & Policies</li>
+            <li className="cursor-pointer hover:underline">About</li>
+            <li className="cursor-pointer hover:underline">Insights</li>
+            <li className="cursor-pointer hover:underline">Community</li>
+            <li className="cursor-pointer hover:underline">Privacy & Policies</li>
           </ul>
         </div>
         <div className="md:w-[30%] flex flex-col items-end max-md:mt-10">
@@ -144,7 +144,7 @@ const HomePage = () => {
             />
             <button
               type="submit"
-              className="mt-4 border border-[#08A7CE] bg-[#08A7CE66] font-semibold px-4 py-2 rounded-full item-end w-36"
+              className="mt-4 border border-[#08A7CE] bg-[#08A7CE66] font-semibold px-4 py-2 rounded-full item-end w-36 cursor-pointer hover:bg-[#08A7CE] transition-colors duration-300"
             >
               SUBMIT
             </button>
