@@ -1,4 +1,5 @@
 import React from "react";
+import { GoArrowUpRight } from "react-icons/go";
 
 const HomePage = () => {
   return (
@@ -36,6 +37,39 @@ const HomePage = () => {
         <div></div>
       </div>
       {/* section 1 ends */}
+
+      {/* section 2 starts */}
+      <div className="flex justify-between mt-10 items-center">
+        <div>
+          <p className="text-[40px] font-medium fontPlayfair">
+            Flutter's <br /> Dawn
+          </p>
+          <p className="font-semibold">History of flutter</p>
+        </div>
+        <div className="w-[35%]">
+          <p className="font-semibold">
+            Uncover the fascinating story of Flutter in 'Flutter's Dawn: History
+            of Flutter.' From humble origins to global acclaim, delve into its
+            captivating narrative. Explore milestones, triumphs, and challenges.
+            Whether tech enthusiast or curious mind, join us on this captivating
+            journey!{" "}
+            <span className=" cursor-pointer text-cyan-500">
+              Click to begin!
+            </span>
+          </p>
+        </div>
+
+        <button className="flex items-center gap-2 bg-[#08A7CE] px-7 py-3 rounded-full font-bold place-self-end">
+          BEGIN <GoArrowUpRight size={23} />
+        </button>
+      </div>
+      {/* section 2 ends */}
+
+      {/* section 3 starts */}
+      
+      {/* section 3 ends */}
+
+
     </div>
   );
 };
