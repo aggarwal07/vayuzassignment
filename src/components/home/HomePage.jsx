@@ -7,33 +7,33 @@ const HomePage = () => {
   return (
     <div className="py-6 bg-[var(--background)] px-4">
       {/* section 1 starts */}
-      <div className="flex justify-between items-center">
-        <div className="w-[35%] font-medium">
-          <p className="text-[43px] fontPlayfair">
+      <div className="flex max-md:flex-col justify-between items-center">
+        <div className="md:w-[35%] font-medium max-md:flex max-md:flex-col max-md:items-center max-md:text-center">
+          <p className="text-3xl sm:text-[38px] xl:text-[43px] fontPlayfair">
             Unlock the Potential of Flutter
           </p>
-          <p className=" text-xl mt-4">
+          <p className="sm:text-lg xl:text-xl mt-4">
             Your Premier Partner for Cross-Platform App Excellence!
           </p>
-          <button className="bg-[#08A7CE] rounded-full uppercase px-7 py-3 mt-14 font-bold">
+          <button className="bg-[#08A7CE] rounded-full uppercase px-7 py-3 mt-5 md:mt-14 font-bold">
             Upgrade Your Tech
           </button>
         </div>
-        <div className="w-[63%] relative">
+        <div className="md:w-[50%] min-[1032px]:w-[63%] relative max-md:mt-10">
           <img
             src="/images/codeImage.jpg"
             alt="codeImage"
-            className="w-[80%] h-auto rounded-md"
+            className="min-[1032px]:w-[80%] h-auto rounded-md"
           />
           <img
             src="/images/snippet1.png"
             alt="snippet1"
-            className="w-[43%] h-auto absolute top-52 right-0 rounded-md"
+            className="w-[43%] h-auto absolute top-40 min-[1352px]:top-52 right-0 rounded-md max-[1032px]:hidden"
           />
           <img
             src="/images/snippet2.png"
             alt="snippet2"
-            className="w-[43%] h-auto relative -top-18 left-60 rounded-md"
+            className="w-[43%] h-auto relative -top-18 left-60 rounded-md max-[1032px]:hidden"
           />
         </div>
         <div></div>
@@ -41,15 +41,15 @@ const HomePage = () => {
       {/* section 1 ends */}
 
       {/* section 2 starts */}
-      <div className="flex justify-between mt-24 items-center">
+      <div className="flex max-md:flex-col justify-between mt-24 items-center">
         <div>
-          <p className="text-[40px] font-medium fontPlayfair">
+          <p className="text-[40px] font-medium fontPlayfair max-md:text-center">
             Flutter's <br /> Dawn
           </p>
-          <p className="font-semibold">History of flutter</p>
+          <p className="font-semibold max-md:mt-3">History of flutter</p>
         </div>
-        <div className="w-[35%]">
-          <p className="font-semibold">
+        <div className="md:w-[35%] max-md:mt-5">
+          <p className="font-semibold max-md:text-center">
             Uncover the fascinating story of Flutter in 'Flutter's Dawn: History
             of Flutter.' From humble origins to global acclaim, delve into its
             captivating narrative. Explore milestones, triumphs, and challenges.
@@ -61,14 +61,14 @@ const HomePage = () => {
           </p>
         </div>
 
-        <button className="flex items-center gap-2 bg-[#08A7CE] px-7 py-3 rounded-full font-bold place-self-end">
+        <button className="flex items-center gap-2 bg-[#08A7CE] px-7 py-3 rounded-full font-bold max-md:mt-5 md:place-self-end">
           BEGIN <GoArrowUpRight size={23} />
         </button>
       </div>
       {/* section 2 ends */}
 
       {/* section 3 starts */}
-      <div className="flex flex-col items-center mt-24">
+      <div className="flex flex-col items-center mt-24 max-md:text-center">
         <p className="fontPlayfair text-[40px]">Our Dynamic Services Suite!</p>
         <p className="font-medium text-[22px] mt-3">
           Embrace Innovation: Let's Create Together!
@@ -82,10 +82,10 @@ const HomePage = () => {
         </p>
 
         <div className="mt-18 flex justify-between w-full">
-          <div className="w-[59%]">
+          <div className="md:w-[59%]">
             <Accordian />
           </div>
-          <div className="w-[38%]">
+          <div className="max-md:hidden w-[38%]">
             <Image
               alt="Details"
               src="/images/displayMid.jpg"
@@ -99,33 +99,33 @@ const HomePage = () => {
       {/* section 3 ends */}
 
       {/* section 4 starts */}
-      <div className="mt-24 flex justify-between w-full">
-        <div className="w-[60%] font-semibold h-[55vh] flex flex-col justify-between">
-          <ul className="flex list-none gap-10">
+      <div className="mt-24 flex max-md:flex-col justify-between w-full">
+        <div className="md:w-[60%] font-semibold md:h-[55vh] flex flex-col max-md:gap-5 justify-between">
+          <ul className="flex list-none gap-10 max-md:text-sm">
             <li>Events</li>
             <li>Gen Ai</li>
             <li>Careers</li>
             <li>Case Study</li>
             <li>SME Talks</li>
           </ul>
-          <div className="text-[28px] w-[50%]">
+          <div className="text-lg max-md:text-center md:text-[28px] md:w-[50%]">
             <p>
               For any collaborative projects or enquiries feel free to connect
               with us.
             </p>
           </div>
-          <ul className="flex list-none gap-10 text-[14px] font-medium">
+          <ul className="flex list-none gap-10 text-xs md:text-[14px] font-medium">
             <li>About</li>
             <li>Insights</li>
             <li>Community</li>
             <li>Privacy & Policies</li>
           </ul>
         </div>
-        <div className="w-[30%] flex flex-col items-end">
-          <p className="font-medium text-[75px] text-right fontPlayfair">
+        <div className="md:w-[30%] flex flex-col items-end max-md:mt-10">
+          <p className="font-medium text-5xl md:text-[75px] text-right fontPlayfair">
             Connect <br /> With Us
           </p>
-          <form className="flex flex-col gap-6 w-full mt-12">
+          <form className="flex flex-col gap-6 w-full mt-5 md:mt-12">
             <input
               type="text"
               placeholder="Full Name"

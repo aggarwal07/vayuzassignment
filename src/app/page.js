@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <div className="">
       <main className="flex max-w-[100vw]">
-        <div className="w-[15vw] max-xl:w-[5vw] bg-[var(--background)] border-r border-[#FFFFFF33]">
+        <div className="w-[15vw] max-xl:w-[5vw] bg-[var(--background)] border-r border-[#FFFFFF33] max-[1029px]:hidden">
           <Sidebar />
         </div>
-        <div className="w-[95vw] xl:w-[85vw]">
+        <div className="min-[1029px]:w-[95vw] xl:w-[85vw]">
           <Header />
           <HomePage />
         </div>
