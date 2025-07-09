@@ -40,7 +40,7 @@ const Sidebar = () => {
             <li>Hire Developer</li>
             <li>Community</li>
           </ul>
-          <div className="mt-auto">
+          <div className="mt-8">
             <Image
               alt="Thumbnail"
               src="/images/pcThumbnail.jpg"

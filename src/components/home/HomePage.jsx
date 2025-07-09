@@ -23,17 +23,17 @@ const HomePage = () => {
           <img
             src="/images/codeImage.jpg"
             alt="codeImage"
-            className="min-[1032px]:w-[80%] h-auto rounded-md"
+            className="h-auto rounded-md"
           />
           <img
             src="/images/snippet1.png"
             alt="snippet1"
-            className="w-[43%] h-auto absolute top-40 min-[1352px]:top-52 right-0 rounded-md max-[1032px]:hidden"
+            className="w-[50%] h-auto absolute top-40 min-[1352px]:top-52 -right-14 rounded-md max-[1032px]:hidden"
           />
           <img
             src="/images/snippet2.png"
             alt="snippet2"
-            className="w-[43%] h-auto relative -top-18 left-60 rounded-md max-[1032px]:hidden"
+            className="w-[50%] h-auto relative -top-18 left-60 rounded-md max-[1032px]:hidden"
           />
         </div>
         <div></div>
