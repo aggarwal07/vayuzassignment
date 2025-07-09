@@ -5,7 +5,7 @@ import Sidebar from "@/components/sidebar/Sidebar";
 export default function Home() {
   return (
     <div className="">
-      <main className="flex w-[100vw]">
+      <main className="flex max-w-[100vw]">
         <div className="w-[15vw]">
           <Sidebar />
         </div>
