@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import Accordian from "./Accordian";
 
 const HomePage = () => {
   return (
@@ -80,15 +81,15 @@ const HomePage = () => {
           Your vision, our expertise. Let's begin!
         </p>
 
-        <div className="mt-14 flex justify-between w-full">
+        <div className="mt-18 flex justify-between w-full">
           <div className="w-[59%]">
-            <Accordian/>
+            <Accordian />
           </div>
           <div className="w-[38%]">
             <Image
               alt="Details"
               src="/images/displayMid.jpg"
-              className="w-full rounded-sm"
+              className="w-full rounded-sm h-[550px] object-cover"
               height={500}
               width={500}
             />
