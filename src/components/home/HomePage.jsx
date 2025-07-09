@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -39,7 +40,7 @@ const HomePage = () => {
       {/* section 1 ends */}
 
       {/* section 2 starts */}
-      <div className="flex justify-between mt-10 items-center">
+      <div className="flex justify-between mt-24 items-center">
         <div>
           <p className="text-[40px] font-medium fontPlayfair">
             Flutter's <br /> Dawn
@@ -66,10 +67,35 @@ const HomePage = () => {
       {/* section 2 ends */}
 
       {/* section 3 starts */}
-      
+      <div className="flex flex-col items-center mt-24">
+        <p className="fontPlayfair text-[40px]">Our Dynamic Services Suite!</p>
+        <p className="font-medium text-[22px] mt-3">
+          Embrace Innovation: Let's Create Together!
+        </p>
+        <p className="font-medium text-[14px] mt-4">
+          Step into innovation! Explore our range of services and let's create
+          something extraordinary together.
+        </p>
+        <p className="font-medium text-[14px]">
+          Your vision, our expertise. Let's begin!
+        </p>
+
+        <div className="mt-14 flex justify-between w-full">
+          <div className="w-[59%]">
+            <Accordian/>
+          </div>
+          <div className="w-[38%]">
+            <Image
+              alt="Details"
+              src="/images/displayMid.jpg"
+              className="w-full rounded-sm"
+              height={500}
+              width={500}
+            />
+          </div>
+        </div>
+      </div>
       {/* section 3 ends */}
-
-
     </div>
   );
 };

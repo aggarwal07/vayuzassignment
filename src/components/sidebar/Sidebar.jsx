@@ -3,7 +3,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col items-center bg-[var(--background)] p-5 px-8 border-r border-[#FFFFFF33] ">
+    <div className="flex flex-col items-center bg-[var(--background)] p-5 px-8 border-r border-[#FFFFFF33]">
       <Image
         alt="Vayuz Logo"
         src="/images/vayuzLogo.png"
